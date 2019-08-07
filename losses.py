@@ -13,6 +13,8 @@ def print_grad(tag):
         print(tag,grad)
         grads.append(grad.clone())
     return wrapper
+
+
 class ArcMarginProduct(nn.Module):
     r"""Implement of large margin arc distance: :
         Args:
